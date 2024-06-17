@@ -1,1 +1,1 @@
-All the mecessary Files required are inititated
+All the necessary Files required are inititated
