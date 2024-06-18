@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('placeholder image.png');
+    background-image: url('placeholder.png');
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 100vH;   */
