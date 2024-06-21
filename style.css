@@ -212,3 +212,12 @@ img:hover{
         margin-right: 0; 
     }
 }
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
