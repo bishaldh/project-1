@@ -81,16 +81,16 @@ header ul li a:hover{
     position: relative;
     justify-content: left;
     align-items: left;
-    margin-top: 70px;
+    margin-top: 96px;
     size: 100px;
-    margin-right: 60rem;
+    margin-right: 50rem;
 }
 
 .text-area h1{
-    font-size: 70px;
+    font-size:100px;
 }
 .text-area h3{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 li a .connect{
@@ -134,13 +134,81 @@ header li .connect:hover{
 }
 .paragraph-1{
     justify-content: right;
-    margin-right: 56rem;
-    margin-top: 20px;
+    margin-right:50rem;
+    margin-top: 40px;
 }
 .paragraph-1 p{
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     font-weight: 400;
     font-style: normal;
-    font-size: 17px;
-    
+    font-size: 22px;
+}
+
+.see-more{
+    display: flex;
+    border:2px solid #c848f5;
+    border-radius: 9px;
+    /* background-color: #c848f5; */
+    /* padding: 15px; */
+    cursor: pointer;
+    margin-right: 82rem;
+    margin-top: 3rem;
+
+}
+.see-more a{
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #000000;
+
+}
+.right-arrow{
+    width: 20px;
+    margin-left: 20px;
+}
+
+.see-more a:hover{
+    color: #ffffff;
+    transition: .6s;
+    background-color: #c848f5;
+}
+img:hover{
+    fill: white;
+}
+@media screen and (max-width: 768px) {
+    body {
+        overflow: auto; 
+    }
+
+    header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column; 
+        margin-top: 10px; 
+    }
+
+    header ul li {
+        margin-bottom: 10px;
+    }
+
+    .logo-holder {
+        margin-top: 0; 
+    }
+
+    .paragraph-1, .see-more {
+        margin-right: 0; 
+    }
+
+    .text-area {
+        margin-top: 40px; 
+        margin-right: 0; 
+    }
+
+    .see-more {
+        margin-right: 0; 
+    }
 }
