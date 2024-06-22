@@ -80,10 +80,9 @@ header ul li a:hover{
 .text-area{
     position: relative;
     justify-content: left;
-    align-items: left;
     margin-top: 96px;
     size: 100px;
-    margin-right: 50rem;
+    margin-right: 800px;
 }
 
 .text-area h1{
@@ -153,7 +152,7 @@ header li .connect:hover{
     cursor: pointer;
     margin-right: 82rem;
     margin-top: 3rem;
-    box-shadow: 0 0 1s0px 0px #ccc9c9;
+    box-shadow: 0 0 30px 5px #ccc9c9;
 
 }
 .see-more a{
@@ -228,7 +227,7 @@ button{
     cursor: pointer;
     border: none;
     margin-top: 200px;
-    box-shadow: 2px 5px 9ox 10px;
+    box-shadow: 2px 5px 9px 10px;
     
 }
 #foot{
@@ -250,4 +249,6 @@ button{
     flex: 1;
     text-align: center;
     margin: 0 110px;
+    padding-top: 60px;
+    font-size: 20px;
 }
