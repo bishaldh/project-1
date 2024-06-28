@@ -209,6 +209,9 @@ img:hover{
     .see-more {
         margin-right: 0; 
     }
+    body{
+        background-image: left;
+    }
 }
 .fade {
     opacity: 0;

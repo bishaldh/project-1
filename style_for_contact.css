@@ -4,7 +4,7 @@
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 body{
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,4 +131,46 @@ header li {
 header li .connect:hover{
     color: white;
     transition: .6s;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+    max-width: 700;
+    width: 50%;
+    background: #fff;
+    padding: 50px 30px;
+    border-radius: 5px;
+
+}
+.container .intro{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .intro::before{
+    content: '';
+    left: 0;
+    bottom: 0   ;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    background: #bb00ff;
+}
+.container form .user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+form .user .input{
+    width: cal(0px);
+    margin: 20px 0px 12px 0px;
+}
+
+.user .input input{
+    height: 45px;
+    width: 100%;
+}
+.user .input .details{
+    font-weight: 500;
+    margin-bottom: 4px;
 }
