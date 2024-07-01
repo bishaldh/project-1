@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     overflow: hidden;
@@ -14,6 +14,7 @@ body{
     height: 100vH;  
 }
 header{
+    max-width: 1400px;
     width: 100%;
     display: flex;
     padding: 20px;
@@ -133,15 +134,17 @@ header li .connect:hover{
     transition: .6s;
 }
 .container{
-    font-family: 'Poppins', sans-serif;
-    max-width: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 700px;
     width: 50%;
-    background: #fff;
-    padding: 50px 30px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px 30px;
     border-radius: 5px;
+    backdrop-filter: blur(10px);
 
 }
 .container .intro{
+    display: block;
     font-size: 25px;
     font-weight: 500;
     position: relative;
@@ -162,15 +165,76 @@ header li .connect:hover{
 
 }
 form .user .input{
-    width: cal(0px);
+    margin-bottom: 15px;
+    width: calc(50% - 10px);
     margin: 20px 0px 12px 0px;
 }
 
 .user .input input{
-    height: 45px;
+    display: block;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border-color: none;
     width: 100%;
+    border: 1px solid #bcbcbc;
+    padding-left: 5px;
+    font-size: 13px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease-in-out;
 }
 .user .input .details{
     font-weight: 500;
+    font-size: 15px;
     margin-bottom: 4px;
+}
+.user input{
+    width: 100%;
+    height: 30px;
+}
+.user #msg-box input{
+    height: 100px;
+    /* width: 100%; */
+}
+form .user .input .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+.user .input input:focus,
+.user .input input:valid{
+    border-color: #9b59b6;
+}
+.container .button{
+    height: 35px;
+    margin: 35px 0 ;
+}
+.container .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background: linear-gradient(-135deg, #7e00b0, #c941ff);
+    border-width: 1px;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+.container .button input:hover{
+    background: linear-gradient(-135deg, #c941ff, #7e00b0);
+    transition-duration: 2s;
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .user .input{
+        width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+
 }
