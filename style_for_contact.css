@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('background\ 2.png');
+    background-image: url('full_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vH;  
@@ -130,17 +130,18 @@ header li {
     transition: .6s;
 }
 header li .connect:hover{
-    color: white;
+    color: rgb(179, 58, 58);
     transition: .6s;
 }
 .container{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 700px;
-    width: 50%;
+    width: 60%;
+    margin-top: 100px;
     background: rgba(255, 255, 255, 0.6);
-    padding: 30px 30px;
+    padding: 90px 90px;
     border-radius: 5px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);
 
 }
 .container .intro{
@@ -210,7 +211,7 @@ form .user .input .details{
     margin: 35px 0 ;
 }
 .container .button input{
-    height: 100%;
+    height: 50px;
     width: 100%;
     outline: none;
     color: #fff;
@@ -237,4 +238,8 @@ form .user .input .details{
         max-width: 100%;
     }
 
+}
+.details input{
+    padding: 20px;
+    margin: 200px;
 }
