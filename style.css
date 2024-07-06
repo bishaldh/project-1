@@ -184,12 +184,11 @@ img:hover{
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
+        background-image: url(full_bg.png);
         background-position: right;
     }
-    ul li a{
-        background-color: #c848f5;
-        padding: 30px;
-    }
+    /* ul li a{
+    } */
     ul{
         padding: 20px;
     }
@@ -208,7 +207,7 @@ img:hover{
     header ul {
         display: none;
         flex-direction: column; 
-        margin-top: 10px;
+        /* margin-top: 10px; */
         width: 100%;
         text-align: center;
     }
@@ -226,7 +225,7 @@ img:hover{
     }
 
     .text-area {
-        margin-top: 120%; 
+        margin-top: 30%; 
         margin-right: 0; 
     }
 
@@ -238,17 +237,41 @@ img:hover{
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 20px;
         right: 20px;
+        top: 20px;
+        z-index: 1001;
     }
 
     .hamburger div {
-        color: sandybrown;
-        width: 25px;
-        height: 3px;
-        background-color: black;
-        margin: 5px 0;
-        transition: 0.4s;
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+        margin: 6px 0;
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header ul.show-menu {
+        display: flex;
+    }
+
+    header ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header ul li a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .cnt{
+        display: none;
     }
 
     .show-menu {

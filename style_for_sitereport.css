@@ -209,64 +209,70 @@ p:hover {
 }
 
 
-
-
-
-
-
-
-@media only screen and (max-width:1320px) {
-    .upper{
-        /* padding: 0 10px; */
-    }
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger .line{
-        width: 30px;
-        height: 40px;
-        margin: 10px 0px;
-        color: black;
-    }
-}
-@media only screen and (max-width:900px) {
-    .upper{
-        padding: 0 30px;
-    }
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger .line{
-        width: 30px;
-        height: 30px;
-        margin: 6px 0px;
-        color: black;
-    }
-    
-}
 @media only screen and (max-width:1075px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo-holder {
+        order: 1;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+        margin: 6px 0;
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header ul.show-menu {
+        display: flex;
+    }
+
+    header ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header ul li a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .container{
+        margin-top: 200px;
+    }
     .imgs{
        display: none; 
     }
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger .line{
-        width: 30px;
-        height: 40px;
-        margin: 10px 0px;
-        color: black;
-    }
-    .upper{
-        padding: 0 30px;
-    }
-    header ul {
-        flex-direction: column;
+    body {
+        overflow-x: hidden;
+        background-position: right;
     }
 
+    .paragraph-1{
+        justify-content: center;
+        align-content: center;
+    }
     .cont1, .cont2, .cont3, .cont4, .cont5, .cont6 {
         flex-direction: column;
         align-items: center;
@@ -293,4 +299,5 @@ p:hover {
         background-color: #ad15e4;
         transition: width 0.3s ease-in-out;
     } 
+
 }

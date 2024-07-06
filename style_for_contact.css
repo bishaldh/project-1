@@ -245,17 +245,69 @@ form .user .input .details{
 }
 
 @media (max-width: 584px) {
-    body{
+    body {
         overflow-x: hidden;
     }
-    .container{
+
+    .container {
         max-width: 100%;
     }
-    form .user .input{
+
+    form .user .input {
         width: 100%;
     }
-    header{
+
+    header {
+        padding: 0 20px;
         max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .logo-holder {
+        order: 1; 
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+        margin: 6px 0;
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header ul.show-menu {
+        display: flex;
+    }
+
+    header ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header ul li a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .cnt {
+        display: none;
     }
 }
 .details input{
