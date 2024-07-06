@@ -262,3 +262,12 @@ form .user .input .details{
     padding: 20px;
     margin: 200px;
 }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100px); }
+    to { transform: translateX(0); }
+}
