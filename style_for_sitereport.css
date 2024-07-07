@@ -179,7 +179,43 @@ p:hover {
 .head6 a{
     text-decoration: none;
 }
+.grid-item img{
+    width: 100%;
+    /* height: auto; */
+    max-width: 100%;
+}
+.im{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+.reference {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa; 
+    border-left: 4px solid #c848f5; 
+}
+
+.reference h2 {
+    font-size: 24px;
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+.reference p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; 
+}
+
+.reference p:first-child {
+    margin-top: 0; 
+}
+
+
 @media screen and (max-width: 768px) {
+   
     body {
         overflow-x: hidden;
         background-position: right;
@@ -292,7 +328,7 @@ p:hover {
 
     .head1, .head2, .head3, .head4, .head5, .head6 {
         text-align: center;
-        margin: 20px 0; /
+        margin: 20px 0;
     }
 
     .imgs {
@@ -312,4 +348,13 @@ p:hover {
         transition: width 0.3s ease-in-out;
     } 
 
+}
+.im img{
+    width: 30%;
+}
+.im h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
 }

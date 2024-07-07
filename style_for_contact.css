@@ -81,9 +81,7 @@ header ul li a:hover{
 .text-area{
     position: relative;
     justify-content: left;
-    align-items: left;
     margin-top: 96px;
-    size: 100px;
     margin-right: 50rem;
 }
 
@@ -180,7 +178,6 @@ form .user .input{
     height: 30px;
     outline: none;
     border-radius: 5px;
-    border-color: none;
     width: 100%;
     border: 1px solid #bcbcbc;
     padding-left: 5px;

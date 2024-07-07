@@ -79,10 +79,8 @@ header ul li a:hover{
 }
 .text-area{
     position: relative;
-    justify-content: left;
     align-items: left;
     margin-top: 96px;
-    size: 100px;
     margin-right: 50rem;
 }
 
@@ -168,6 +166,7 @@ header li .connect:hover{
     cursor: pointer;
 }
 .grid-item{
+    text-align: center;
     box-shadow: 0 0 20px 1px #887c7c;
     border-radius: 20px;
     margin: 20px;
@@ -176,13 +175,7 @@ header li .connect:hover{
     /* padding: 30px 130px 120px 130px;
     flex: 1; */
 } 
-.grid-item a{
-    justify-content: center;
-    text-decoration: none;
-    color: #c848f5;
-    margin-left: 15px;
-    font-size: 25px;
-}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
